@@ -377,17 +377,17 @@ iframe {
     width: 100%;
     max-width: 560px; /* Controls the width of the video */
     height: auto;
-    border-radius: 10px;
+
 }
 
 .video-container {
     position: relative;
     width: 100%;
     max-width: 560px; /* Adjust this for the desired width */
-    padding-bottom: 25%; /* Adjust the aspect ratio to make the video shorter (for example, 16:7) */
+    padding-bottom: 27%; /* Adjust the aspect ratio to make the video shorter (for example, 16:7) */
     height: 0;
     overflow: hidden;
-    border-radius: 10px;
+
 }
 
 /* .video-container iframe {
