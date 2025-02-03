@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!--references to stylesheets-->
+    <link rel="stylesheet" href="mediaqueries.css"> 
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Elizabeth O'Brien</div>
+        <div>
+            <ul class="nav-links"> <!--ul: unordered list-->
+                <li><a href="#about">About</a></li> <!--creates navigation at top of webpage-->
+                <li><a href="#skills">Skills</a></li> 
+                <li><a href="#projects">Projects</a></li> 
+                <li><a href="#contact">Contact</a></li> 
+
+            </ul>
+        </div>
+    </nav> <!--nav element, used to target with stylesheets-->
+    <nav id="hamburger-nav">
+        <div class="logo">Elizabeth O'Brien</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li> <!--creates navigation at top of webpage-->
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li> 
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> 
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__text">
+            <h1 class="title">Elizabeth O'Brien</h1>
+            <p class="section__text__p1">Political Science and Economics | Research and Data Enthusiast</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/OBrien - 2024 Resume.pdf')">
+                Resume </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn"
+                class="icon" onclick="location.href='https://linkedin.com/'">
+                <img src="./assets/github.png" alt="github"
+                class="icon" onclick="location.href='https://github.com/elizabethkob'">
+            </div>
+    </section>
+
+    <section id="about">
+        <h1 class="title">About</h1>
+        <div class="about-details-container">
+            <div class="about-container-1">
+                <p>I am a Senior majoring in 
+                    Political Science and Economics 
+                    and minoring in Computer Science 
+                    with a certificate in International Relations 
+                    at UMass Amherst.  I am interested in using
+                    quantitative analysis to explore
+                    the relationship between political attitudes, 
+                    public opinion, and economic trends. 
+                </p> 
+                <p>
+                    Outside of school I enjoy reading, travel, 
+                    and photography. 
+                </p>
+                </div>
+            </div>
+            <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assets/book.png" alt="edu icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Political Science and Economics Major</p>
+                        <p>Computer Science Minor</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>Quantitative Social Science Analysis</p>
+                        <p>Office Administration and Legal Research</p>
+                    </div>
+                </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow"
+        onclick="location.href='./#skills'">
+    </section>
+
+    <section id="skills">
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <img src="./assets/monitor.png" alt="computer" class="icon">
+                    <h3>Software and Tools</h3>
+                    <div>
+                        <p>Microsoft Office Suite</p>
+                        <p>Google Workspace</p>
+                        <p>Adobe Creative Cloud</p>
+                        <p>Git</p>
+                        <p>GitHub</p>
+                        <p>VSCode</p>
+                        <p>RStudio</p>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/web-programming.png" alt="technical icon" class="icon">
+                    <h3>Programming Languages</h3>
+                    <div>
+                        <p>Python</p>
+                        <p>R</p>
+                        <p>Java</p>
+                        <p>C</p>
+                        <p>JavaScript/TypeScript</p>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                    </div>
+                    </div>
+                <div class="details-container">
+                    <img src="./assets/edit-tools.png" alt="computer" class="icon">
+                            <h3>Professional</h3>
+                            <div>
+                                <p>Communication</p>
+                                <p>Teamwork and Collaboration</p>
+                                <p>Organization</p>
+                                <p>Time Management</p>
+                                <p>Research and Analysis</p>
+                            </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow"
+        onclick="location.href='./#projects'">
+    </section>
+
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="projects-container">
+            <div class="details-container-2">
+                <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/I1jj3Put8r4?si=dUibse2v0z9c2iVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <div class="project-info">
+                    <h2 class="project-title">Public vs. Expert Risk Perception in Public Policy</h2>
+                    <p class="project-description">
+                        Understanding the divergence between expert and public risk perception.  
+                        Making policy decisions with imperfect information. 
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow"
+        onclick="location.href='./#contact'">
+    </section>
+
+    <section id="contact">
+        <h1 class="title">Contact</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:obrien.elizabethkennedy@gmail.com">obrien.elizabethkennedy@gmail.com</a></p>
+            </div>
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                    <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script> <!--makes script.js src-->
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links"> <!--ul: unordered list-->
+                    <li><a href="#about">About</a></li> <!--creates navigation at top of webpage-->
+                    <li><a href="#skills">Skills</a></li> 
+                    <li><a href="#projects">Projects</a></li> 
+                    <li><a href="#contact">Contact</a></li> 
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright  &#169; 2025 Elizabeth O'Brien.  All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>
